@@ -503,7 +503,7 @@ ProductNewEditForm.propTypes = {
 };
 
 
-
+const NewProductSchema={
 const NewProductSchema = Yup.object().shape({
 	name: Yup.string().required('Name is required'),
    // images: Yup.array().min(1, 'Images is required'),
@@ -521,5 +521,5 @@ const NewProductSchema = Yup.object().shape({
   	enabled: Yup.boolean(),
   	content: Yup.string(),
 	}),
-  });
+  })};
     	
